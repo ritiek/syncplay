@@ -41,7 +41,7 @@ class MpvPlayer(MplayerPlayer):
         args.extend(constants.MPV_SLAVE_ARGS)
         if constants.MPV_NEW_VERSION:
             args.extend(constants.MPV_SLAVE_ARGS_NEW)
-            args.extend(["--script={}".format(findResourcePath("syncplayintf.lua"))])
+            # args.extend(["--script={}".format(findResourcePath("syncplayintf.lua"))])
         return args
 
     @staticmethod
